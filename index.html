@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head> 
+    
+ <title>Подключение CSS к HTML</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+      
+    
+ 
+     <script>
+      
+     var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+
+</script>
+     
+ </head>
+    
+    
+    
+ <body> 
+        
+     
+     
+     
+     <div id="btn1" class="btn"> Attacher
+         </div>     
+     <div id="btn2" class="btn"> Shifter
+         </div>     
+     <div id="btn3" class="btn"> Move Anchor
+         </div>     
+     <div id="btn4" class="btn"> Remove FX
+         </div>     
+     
+     
+     
+     
+     
+      
+              
+    <script src="js/libs/CSInterface.js"></script>
+	<script src="js/main.js"></script>
+        
+     
+    
+</body> </html>

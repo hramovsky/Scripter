@@ -1,0 +1,55 @@
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+
+
+
+body{
+  background-color: #1B1B1B;
+  color: white;
+    
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    
+}
+
+
+
+
+.btn {   
+    
+    text-align: center;
+    min-width: 10px;
+    color: #C7C7C7;
+    font-family: Roboto;
+    padding: 3px 20px 3px;
+    font-size: 12px;
+    display: inline-block;
+    background-color: #424242;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 2px 0px;
+    
+}
+
+
+.btn:hover {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.btn:active {
+  background-color: #87CEFA;
+    color: white;
+    transform: translateY(1px);
+  
+  
+}
+
+

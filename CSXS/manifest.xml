@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExtensionManifest
-	Version="4.0"
+	Version="6.0"
 	ExtensionBundleId="com.scripter"
 	ExtensionBundleVersion="1.0.0"
 	ExtensionBundleName="Scripter"
@@ -12,7 +12,7 @@
 
 	<ExecutionEnvironment>
 		<HostList>
-			<Host Name="AEFT" Version="13.0" />
+			<Host Name="AEFT" Version="[15.0,99.9]" />
 		</HostList>
 
 	<LocaleList>
@@ -20,7 +20,7 @@
 	</LocaleList>
 
 	<RequiredRuntimeList>
-		<RequiredRuntime Name="CSXS" Version="4.5" />
+		<RequiredRuntime Name="CSXS" Version="6.0" />
 	</RequiredRuntimeList>
 </ExecutionEnvironment>
 

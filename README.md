@@ -1,7 +1,11 @@
 # Scripter
 AE script loader extention
 
-//AppData\Roaming\Adobe\CEP\extensions
+paths:
+AppData\Roaming\Adobe\CEP\extensions
+or
+C:\Program Files (x86)\Common Files\Adobe\CEP\extensions
+
 
 
 jsx/linkscript.jsx     - AE script functions running scripts from folder
@@ -16,6 +20,7 @@ manifest        - names of extention
 
 
 
-match extention to CSXS in registry
+if extension is not working:
+match extention to current AE CSXS in registry
 add string value PlayerDebugMode = 1
 Computer\HKEY_CURRENT_USER\SOFTWARE\Adobe\CSXS.8

@@ -2,51 +2,69 @@
 <html lang="en">
     <head> 
     
- <title>Подключение CSS к HTML</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+<title>Подключение CSS к HTML</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
       
     
  
-     <script>
+<script>
       
-     var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 
-if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
 
-function mischandler(){
-return false;
-}
+    function mischandler(){
+        return false;
+    }
 
 
-function mousehandler(e){
-var myevent = (isNS) ? e : event;
-var eventbutton = (isNS) ? myevent.which : myevent.button;
-if((eventbutton==2)||(eventbutton==3)) return false;
-}
-document.oncontextmenu = mischandler;
-document.onmousedown = mousehandler;
-document.onmouseup = mousehandler;
+    function mousehandler(e){
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler; 
+       
 
 </script>
      
+
  </head>
     
     
     
- <body> 
+ <body>       
         
      
-     
-     
-     <div id="btn1" class="btn"> Attacher
-         </div>     
-     <div id="btn2" class="btn"> Shifter
-         </div>     
-     <div id="btn3" class="btn"> Move Anchor
-         </div>     
-     <div id="btn4" class="btn"> Remove FX
-         </div>     
-     
+    <div id="btn1" class="btn"> compSet
+    </div>     
+    <div id="btn2" class="btn"> BG Renderer
+    </div>     
+    <div id="btn3" class="btn"> Move Anchor
+    </div>     
+    <div id="btn4" class="btn"> AutoCrop_2015
+    </div>     
+    <div id="btn5" class="btn"> Remove Effect
+    </div>
+    <div id="btn6" class="btn"> Rename
+    </div>
+    <div id="btn7" class="btn"> Random Shifter
+    </div>
+    <div id="btn8" class="btn"> Multiply Keys
+    </div>
+    <div id="btn9" class="btn"> Rift
+    </div>
+    <div id="btn10" class="btn"> addShape
+    </div>
+    <div id="btn11" class="btn"> compDuplicate
+    </div>
+    <div id="btn12" class="btn"> Attacher 0.1
+    </div>
+   
+       
+      
      
      
      
@@ -55,6 +73,7 @@ document.onmouseup = mousehandler;
               
     <script src="js/libs/CSInterface.js"></script>
 	<script src="js/main.js"></script>
+    
         
      
     
